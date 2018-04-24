@@ -16,9 +16,9 @@ const runQuery = util.promisify(connection.query).bind(connection);
     try {
 
 
-       let userData  = await runQuery('SELECT * from user') // you query for any table
+        let userData  = await runQuery('SELECT * from user') // you query for any table
 
-       let bookingData  = await runQuery('SELECT * from booking')  // you pother  query for any table
+        let bookingData  = await runQuery('SELECT * from booking')  // you pother  query for any table
 
 
     } catch (err) {
